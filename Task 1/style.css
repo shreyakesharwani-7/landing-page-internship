@@ -1,0 +1,135 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #292b2c;
+  color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex: 1;
+  font-size: large;
+  gap: 20px; /* Uniform spacing between links */
+}
+
+.nav-links li {
+  /* Removed margin-left to avoid uneven spacing */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(33, 119, 173);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  background: linear-gradient(135deg, #00bcd4, #2196f3);
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+/* Call To Action Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: white;
+  color: #2196f3;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e0f7fa;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #292b2c;
+  color: white;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.social-links a i {
+  margin-right: 8px;
+}
+
+.social-links a:hover {
+  color: rgb(33, 119, 173);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+  }
+
+  .nav-links li {
+    margin: 10px 15px 10px 0; /* Space between items vertically and horizontally */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
